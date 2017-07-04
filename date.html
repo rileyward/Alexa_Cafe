@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            // Tells the code to run after the page has loaded
+            window.onload = function () {
+                // Gets the current day information from the computer
+                var date = new Date();
+                // Gets the hours from the day information
+                var hour = date.getHours();
+                // Creates an empty box to hold the greeting
+                var message;
+                 
+                // Create the greeting variable here
+                var greeting = document.getElementsById("greeting");
+ 
+                // Checks what time of day it is
+                // *****************************************
+                if(hour > 18){
+                    message = "Good Evening!";
+                } else if (hour > 12) {
+                    message = "Good Afternoon!";
+                } else if (hour > 0) {
+                    message = "Good Morning!";
+                } else {
+                    message = "Hello!";
+                }
+                // ******************************************
+ 
+                 
+                // Set the content on the page with innerHTML here
+                greeting.innerHTML = message;
+                 
+            }            
+        </script>      
+    </head>    
+    <body>
+        <h1 id="greeting">Hello!</h1>
+        <h2>Welcome to my website!</h2>
+    </body>
+</html>

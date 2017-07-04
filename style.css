@@ -1,0 +1,10 @@
+html {
+    background-color: aquamarine;
+}
+
+#myName {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    width: auto;
+    height: auto;
+    margin-left: 40%;
+}
