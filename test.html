@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            // Example Shop            
+             
+            //Amount of money
+            var money = 50;            
+ 
+            //Introduction
+            alert("Welcome to my shop!");
+            // Lets the user know how much money they have and shop inventory
+            alert("We have: dust - $5, toaster - $25, shop - $50);
+            alert("You have " + money + " dollars.");
+ 
+            var buySomething = "";                
+            buySomething = prompt("Would you like to buy something?");
+            buySomething = buySomething.toLowerCase();
+ 
+            //Runs if user says yes
+            if(buySomething == "yes"){
+                var item = prompt("Would you like to buy the dust, toaster, or the shop?");
+                item = item.toLowerCase();
+ 
+                if(item == "dust"){
+                    alert("You want some floor dust? Sure! It only costs 5 dollars.");
+                    money = money - 5;
+                } else if(item == "toaster"){
+                    alert("The toaster is a deluxe edition. It costs 25 dollars.");
+                    money = money - 25;
+                } else if(item == "shop"){
+                    alert("You want the whole shop? You can have it for 50 dollars.");
+                    money = money - 50;
+                } else {
+                    alert("I guess I just don't have what you're looking for. Sorry.");
+                }
+            }            
+             
+            //Runs at the end
+            alert("You have " + money + " dollars left.");
+            if(money >= 40){
+                alert("Good thinking, save that money for bigger and better things.");
+            }
+            else if(money <= 10){
+                alert("Now you can do anything... as long as it doesn't cost money.");
+            }
+            else{
+                alert("You bought the best item in the shop!");
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Shopping</h1>
+    </body>
+</html>

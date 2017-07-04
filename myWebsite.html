@@ -10,39 +10,48 @@
             alert("Please be patient, my website is under construction.");
             
             /* *************** Family *************** */
-            
+            function showFamily(){
             // Create your family variables here
             var mother = "Mom";
             var father = "Dad";
-            var numberOfBRothers = 1;
+            var numberOfBrothers = 1;
             var numberOfSisters = 0;
  
             var familyMessage = "My family is " + mother + ", " + father + ", " + numberOfBrothers + " brothers, and " + numberOfSisters + " sisters.";
             // Create your family alert here
             alert(familyMessage);
+            }
        /* **************** Home **************** */
-             
+             function showHome(){
             // Create your home variables here
- 
- 
-            var homeMessage = "I live in " + hometown + ". And my home is " + describeHome + "!";
-            // Create your home alert here
-             
-        /* *************** School *************** */
+            var homeTown = "Flower Mound";
+            var describeHome = "calm, fun, and clean";
             
+            var homeMessage = "I live in " + homeTown + ". And my home is " + describeHome + "!";
+            // Create your home alert here
+            alert(homeMessage);
+             }
+        /* *************** School *************** */
+            function showSchool(){
             // Create your school variables here
- 
+            var schoolName = "Foorestwood Middle School";
+            var gradeNumber = 7;
  
             var schoolMessage = "I go to school at " + schoolName + ". And I am in grade " + gradeNumber + ".";
             // Create your school alert here
-             
+             alert(schoolMessage);
+            }
         /* **************** Love **************** */
- 
+            function showLove(){
             // Create your love variables here
- 
+            var thingILove1 = "coding";
+            var thingILove2 = "basketball";
+            var thingILove3 = "Minecraft/Video Games";
  
             var loveMessage = "I love " + thingILove1 + ", " + thingILove2 + ", and " + thingILove3 + "!";
             // Create your love alert here
+            alert(loveMessage);
+            }
         </script>        
     </head>    
     <body>
@@ -50,6 +59,13 @@
         <h2 class="age">I am 12 years old</h2>
         <h3>Hmm, this text is getting smaller</h3>
         <h4>Do they just keep getting smaller?</h4>
+        <h5>What's your favorite color?</h5>
         <h6>Why am I still shrinking???</h6>
+        
+        <h2>Learn about my:</h2>
+        <input type="button" value="Family" onclick="showFamily()"/>
+        <input type="button" value="Home" onclick="showHome()"/>
+        <input type="button" value="School" onclick="showSchool()"/>
+        <input type="button" value="Love" onclick="showLove()"/>
     </body>
 </html>

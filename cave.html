@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            
+            function getPlayerName(){
+                alert("Welcome player to the Cave of Wonders!");
+                var reply = prompt("What is your name?");
+                
+                return reply;
+            }
+            
+            function startLevelOne(){
+                var score = 0;
+                 
+                alert("You have approached the entrance of the cave.");
+                
+                var enter = prompt("Do you dare enter?").toLowerCase();
+                 
+                if(enter == "yes"){
+                    alert("Good, you will enter the cave. Adventure awaits!");
+                    score += 50;
+                    
+                    var direction = prompt("You reach the end of the tunnel and there are two directions: up or down. Which do you choose?").toLowerCase();
+                    
+                    if(direction == "up"){
+                        alert("You see a shinny blue rock in the ground. You found the diamoinds and have won the game!");
+                        score += 200;
+                    } else {
+                        alert("You are walking down a a long decline and realize you can't get back up. You try to dig your way out but get flooded with lava. You have ended your journy for diamonds unsuccessfully.")
+                        score -= 10000;
+                    }
+                    
+                } else {
+                    alert("You do not wish to enter the cave. Your journey ends here.");
+                    score -= 500;
+                }
+
+                return score
+            }
+            
+            function endGame(){
+                alert("Game over!");
+                alert("Your game score is: " + score);
+            }
+            
+            function play(){
+                alert("Game Started:");
+                var name = getPlayerName();
+                var score = startLevelOne();
+                
+                endGame(score);
+            }                    
+        </script>
+    </head>
+    <body>
+        <h1>Cave Adventure</h1>
+        <input type="button" value="Start Game" onclick="play()" />
+    </body>
+</html

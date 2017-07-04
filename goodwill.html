@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            // Introduction
+            alert("Welcome to Goodwill!");
+            // Array
+            var donations = [];
+            // Accept Donations
+            var donation = "";
+            while(donation != "no"){
+                donation= donation.toLowerCase();
+                donations.push(donation);
+                donation = prompt("Please enter a donation, or type no to quit:");
+            }
+            // Sort and print array            
+            donations.sort();
+            var donationList = "";
+            for(var i = 0; i < donations.length; i++){
+                donationList += donations[i];
+                donationList += "";
+            }
+            // Farewell
+            alert("Thank you for the donations!");
+            alert("We recieved:" + donationList);
+            alert("Have great day! :)");
+        </script>
+    </head>
+    <body>
+        <h1>Goodwill</h1>
+    </body>
+</html>
